@@ -1,0 +1,49 @@
+/* globals */
+body {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+/* header section */
+.header {
+	background-color: #202020;
+	padding: 0 30px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	justify-items: center;
+	align-items: center;
+}
+.header-menu-icon {
+	justify-self: left;
+	cursor: pointer;
+}
+.header-search-icon {
+	justify-self: right;
+	cursor: pointer;
+}
+
+/* sub-header section */
+.sub-header {
+	background-color: #151515;
+	color: white;
+	font-family: "Roboto Condensed", sans-serif;
+}
+.sub-title {
+	color: white;
+	font-size: 0.8em;
+	font-weight: 500;
+	display: grid;
+	grid-template-columns: 60% 40%;
+	align-items: center;
+	justify-items: center;
+	text-decoration: none;
+}
+.sub-title-text {
+	justify-self: right;
+}
+.sub-title-image {
+	padding-left: 0.5em;
+	justify-self: left;
+}
+
+/* carousel section */
