@@ -21,7 +21,7 @@
 					height="18"
 					alt="icon"
 				/>
-				<a class="mobile-nav__logo" href="/"
+				<a class="mobile-nav__logo" href="./"
 					><span class="icon--svg icon--svg mvl-animated-logo" aria-hidden="true"
 						><svg width="130" height="52" xmlns="http://www.w3.org/2000/svg">
 							<rect fill="#EC1D24" width="100%" height="100%"></rect>
@@ -80,6 +80,7 @@
 			<!-- sub-header -->
 			<div class="sub-header">
 				<a
+					target="_blank"
 					class="sub-title"
 					href="https://preview.disneyplus.com/pe?cid=DTCI-Synergy-Marvel-Site-Acquisition-USLaunch-US-Marvel-NA-EN-NavPipe-StartStreamingNowCTA-NA"
 				>
@@ -99,12 +100,24 @@
 			<figure class="carousel-image">
 				<img src="src/img/carousel-image.jpg" alt="black-widow" />
 			</figure>
+			<div class="carousel-pagination-wrap">
+				<hr class="carousel-pagination" />
+				<hr class="carousel-pagination" />
+				<hr class="carousel-pagination" />
+				<hr class="carousel-pagination" />
+				<hr class="carousel-pagination" />
+			</div>
 			<section class="main-description">
 				<h4>MARVEL COMICS</h4>
 				<h1>BLACK WIDOW #1</h1>
 				<p>This September Kelly Thompson and Elena Casagrande team up for a new adventure.</p>
-				<button>WATCH TRAILER</button>
+				<button class="filled">WATCH TRAILER</button>
+				<button style="display: none;" class="stroke">WATCH TRAILER 2</button>
 			</section>
 		</main>
 	</body>
+	<script>
+		CSS.paintWorklet.addModule("src/js/bezel-filled.js");
+		CSS.paintWorklet.addModule("src/js/bezel-stroke.js");
+	</script>
 </html>

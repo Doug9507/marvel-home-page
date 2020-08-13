@@ -1,4 +1,10 @@
 /* globals */
+:root {
+	--bezel-color-primary: #e62429;
+	--bezel-color-secondary: white;
+	--bazel-width: 2;
+}
+
 body {
 	margin: 0;
 	box-sizing: border-box;
@@ -73,6 +79,39 @@ body {
 .main-description h4,
 .main-description h1 {
 	font-weight: bold;
+}
+button {
+	padding: 1.2em 2em;
+	background-color: var(--bezel-color);
+	color: white;
+	font-weight: bold;
+	border-style: none;
+	cursor: pointer;
+}
+button.stroke {
+	background-color: unset;
+	background-image: paint(bezelStroke);
+}
+button.stroke:hover {
+	--bezel-color-secondary: rgba(250, 250, 250, 0.3);
+}
+button.filled {
+	background-color: unset;
+	background-image: paint(bezelFilled);
+}
+button.filled:hover {
+	--bezel-color-primary: #810000;
+}
+.carousel-pagination-wrap {
+	display: flex;
+	padding: 0 200px;
+}
+.carousel-pagination {
+	width: 18px;
+	border: 2px solid white;
+}
+.carousel-pagination-wrap hr:nth-child(3) {
+	border: 2px solid var(--bezel-color-primary);
 }
 
 /* break points */
