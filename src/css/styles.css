@@ -56,6 +56,24 @@ body {
 }
 
 /* carousel section */
+.carousel-image {
+	margin: 0;
+}
+.carousel-image img {
+	width: 100%;
+}
+.main {
+	background-color: #151515;
+	color: white;
+	padding-bottom: 4em;
+}
+.main section {
+	padding: 0 20px;
+}
+.main-description h4,
+.main-description h1 {
+	font-weight: bold;
+}
 
 /* break points */
 @media screen and (min-width: 839px) {
