@@ -2,10 +2,14 @@
 body {
 	margin: 0;
 	box-sizing: border-box;
+	font-family: "Roboto Condensed", sans-serif;
 }
 
 /* header section */
-.header {
+.header-two {
+	display: none;
+}
+.header-one {
 	background-color: #202020;
 	padding: 0 30px;
 	display: grid;
@@ -13,11 +17,11 @@ body {
 	justify-items: center;
 	align-items: center;
 }
-.header-menu-icon {
+.header-one-menu-icon {
 	justify-self: left;
 	cursor: pointer;
 }
-.header-search-icon {
+.header-one-search-icon {
 	justify-self: right;
 	cursor: pointer;
 }
@@ -26,7 +30,9 @@ body {
 .sub-header {
 	background-color: #151515;
 	color: white;
-	font-family: "Roboto Condensed", sans-serif;
+}
+.sub-header-one {
+	display: none;
 }
 .sub-title {
 	color: white;
@@ -38,8 +44,11 @@ body {
 	justify-items: center;
 	text-decoration: none;
 }
-.sub-title-text {
+.sub-title-text-one {
 	justify-self: right;
+}
+.sub-title-text-two {
+	display: none;
 }
 .sub-title-image {
 	padding-left: 0.5em;
@@ -47,3 +56,80 @@ body {
 }
 
 /* carousel section */
+
+/* break points */
+@media screen and (min-width: 839px) {
+	.header-one {
+		display: none;
+	}
+	.header-two {
+		background-color: #202020;
+		padding: 0 30px;
+		display: grid;
+		grid-template-columns: 20% 50% 23% 7%;
+		align-items: center;
+		justify-items: center;
+	}
+	.header-two-border-line {
+		display: inherit;
+		width: 100%;
+		height: 100%;
+		border: 1px solid #393939;
+		align-items: center;
+		justify-items: center;
+	}
+	.header-two-sign {
+		color: white;
+		font-size: 0.8em;
+		font-weight: bold;
+	}
+	.header-two-credit-card {
+		color: white;
+		font-weight: bold;
+		font-size: 0.8em;
+		display: grid;
+		grid-template-columns: 45% 55%;
+	}
+	.header-two-credit-card-image {
+		justify-self: right;
+		padding-right: 0.8em;
+	}
+	.header-two-credit-card-text {
+		justify-self: left;
+	}
+	.sub-header-one {
+		display: grid;
+		background-color: #202020;
+		padding: 10px 100px;
+		color: white;
+		font-weight: bold;
+		font-size: 0.8em;
+		border-top: 1px solid #393939;
+	}
+	.sub-header-one-wrap {
+		display: grid;
+		grid-template-columns: repeat(8, 1fr);
+		justify-items: center;
+	}
+	.sub-header-one .sub-header-one-wrap span {
+		cursor: pointer;
+	}
+	.sub-header-one .sub-header-one-wrap span:hover {
+		border-bottom: 2px solid red;
+	}
+	.sub-title {
+		grid-template-columns: 63% 37%;
+	}
+	.sub-title-text-one {
+		display: none;
+	}
+	.sub-title-text-two {
+		display: block;
+		justify-self: right;
+	}
+}
+@media screen and (min-width: 1024px) {
+	.sub-header-one {
+		padding: 10px 200px;
+	}
+}
