@@ -104,7 +104,7 @@ button.filled:hover {
 }
 .carousel-pagination-wrap {
 	display: flex;
-	padding: 0 140px;
+	padding: 0 100px;
 }
 .carousel-pagination {
 	width: 18px;
