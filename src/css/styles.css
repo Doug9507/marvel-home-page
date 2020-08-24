@@ -179,28 +179,32 @@ button.filled:hover {
 .main-title-decorated {
 	letter-spacing: 0.2em;
 }
-.main-title-decorated ::before {
+.main-title-decorated::before {
 	content: "";
 	display: block;
 	position: relative;
 	height: 2px;
-	width: 20px;
+	width: 30px;
 	background-color: #c6a972;
 	top: -8px;
-	left: 49px;
+	left: 42px;
 	transform: rotate(-45deg);
 }
-.main-title-decorated ::after {
+.main-title-decorated::after {
 	content: "";
 	display: block;
 	position: relative;
 	height: 2px;
-	width: 20px;
+	width: 30px;
 	background-color: #c6a972;
 	top: calc(100% + 3px);
-	left: -6px;
+	left: 5px;
 	transform: rotate(-45deg);
 	margin-top: 6px;
+}
+.unlimited-icon {
+	padding-top: 2.5em;
+	margin-bottom: 1em;
 }
 /* sub-main end */
 
