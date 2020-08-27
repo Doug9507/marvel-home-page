@@ -2,6 +2,7 @@
 :root {
 	--bezel-color-primary: #e62429;
 	--bezel-color-secondary: white;
+	--bezel-color-third: black;
 	--bazel-width: 2;
 }
 
@@ -264,7 +265,8 @@ button.filled:hover {
 	text-align: center;
 	padding: 0 2em;
 }
-.card-section-news-list {
+.card-section-news-list,
+.card-section-latest-list {
 	padding: 0 1em;
 	display: grid;
 	grid-template-columns: 1fr;
@@ -279,13 +281,73 @@ button.filled:hover {
 	column-gap: 1em;
 }
 .card-section-news-list-item-description h4,
-.card-section-news-list-item-description p {
+.card-section-news-list-item-description p,
+.card-section-latest-list-item-description h4,
+.card-section-latest-list-item-description p {
 	margin: 0;
+	font-weight: bold;
 }
 .card-section-news-list-item-description h4 {
 	color: rgba(0, 0, 0, 0.5);
 }
 /* news section end */
+
+/* latest section */
+.card-section-latest-header {
+	padding-left: 0.3em;
+	font-weight: bold;
+}
+.card-section-latest-item {
+	border-bottom: 1px solid #bbbbbb;
+	padding-bottom: 1.3em;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.card-section-latest-list-item-description h4,
+.card-section-latest-list-item-description-content,
+.card-section-latest-list-item-description-legend {
+	padding-top: 0.7em;
+}
+.card-section-latest-list-item-description-legend,
+.card-section-latest-list-item-description h4 {
+	color: rgba(0, 0, 0, 0.5);
+	font-size: 0.8em;
+	letter-spacing: 0.2em;
+}
+.card-section-latest-list-item-description-content {
+	font-size: 1.3em;
+}
+.card-section-latest-item .video-exclusive {
+	color: #e62429;
+}
+.card-section-latest-list-item-description-join {
+	padding-top: 0.7em;
+	display: grid;
+	grid-template-columns: 10% 1fr;
+	align-items: center;
+	column-gap: 0.2em;
+}
+.card-section-latest-list-item-description-join-text {
+	color: rgba(0, 0, 0, 0.6);
+}
+.card-section-latest-list-item-description-join-link {
+	color: #e62429;
+	font-weight: bold;
+}
+.card-section-latest-button {
+	display: grid;
+	justify-content: center;
+}
+button.stroke-black {
+	background-color: unset;
+	background-image: paint(bezelStrokeBlack);
+	color: black;
+	width: 150px;
+}
+button.stroke-black:hover {
+	--bezel-color-third: rgba(0, 0, 0, 0.3);
+}
+/* latest section end */
 
 /* break points */
 @media screen and (min-width: 839px) {
