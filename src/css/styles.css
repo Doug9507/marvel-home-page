@@ -367,7 +367,36 @@ button.stroke-black:hover {
 	box-shadow: 0 7px 17px -8px rgba(0, 0, 0, 0.8);
 }
 /* story boards section end */
-
+/* payment section */
+.main.payment {
+	padding-top: 0.7em;
+	padding-bottom: 0;
+	background-color: #000000;
+}
+.main-description.payment {
+	display: grid;
+	justify-content: center;
+}
+.main-description.payment h1,
+.main-description.payment h4,
+.main-description.payment p {
+	text-align: center;
+}
+.main-description.payment h4 {
+	color: #e62429;
+}
+.main-description.payment h1 {
+	font-size: 1.9em;
+	margin: 0;
+	font-weight: bold;
+}
+.main-description.payment button {
+	margin: 1em 0 2.5em 0;
+}
+.main-description.payment p {
+	font-size: 0.8em;
+}
+/* payment section end */
 /* break points */
 @media screen and (min-width: 839px) {
 	.header-one {
