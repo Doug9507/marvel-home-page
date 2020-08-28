@@ -349,6 +349,25 @@ button.stroke-black:hover {
 }
 /* latest section end */
 
+/* story boards section */
+.card-section.tertiary figure {
+	border-bottom: white;
+}
+.card-section-latest-list-item-description .description-storyboard {
+	font-size: 1.1em;
+	padding-top: 1em;
+	font-weight: unset;
+}
+.cards-carousel.tertiary {
+	height: 170px;
+}
+.cards-carousel-item.tertiary {
+	height: 70px;
+	margin: 0;
+	box-shadow: 0 7px 17px -8px rgba(0, 0, 0, 0.8);
+}
+/* story boards section end */
+
 /* break points */
 @media screen and (min-width: 839px) {
 	.header-one {
