@@ -366,6 +366,12 @@ button.stroke-black:hover {
 	margin: 0;
 	box-shadow: 0 7px 17px -8px rgba(0, 0, 0, 0.8);
 }
+.main-description.secondary {
+	padding-top: 3em;
+}
+.main-description.secondary button {
+	margin-bottom: 1.5em;
+}
 /* story boards section end */
 /* payment section */
 .main.payment {
@@ -376,6 +382,7 @@ button.stroke-black:hover {
 .main-description.payment {
 	display: grid;
 	justify-content: center;
+	align-items: center;
 }
 .main-description.payment h1,
 .main-description.payment h4,
@@ -392,11 +399,95 @@ button.stroke-black:hover {
 }
 .main-description.payment button {
 	margin: 1em 0 2.5em 0;
+	width: 150px;
+	justify-self: center;
 }
 .main-description.payment p {
 	font-size: 0.8em;
 }
 /* payment section end */
+/* footer */
+.footer {
+	display: grid;
+	grid-area: "links" "announcement" "social" "terms";
+	background-color: #151515;
+	color: white;
+}
+.links {
+	grid-area: "links";
+}
+.links-image {
+	text-align: center;
+	padding-top: 2em;
+}
+.links-list {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	padding: 0.5em 2em;
+}
+.links-list-item {
+	display: inherit;
+	/* justify-content: center; */
+	font-size: 0.8em;
+	font-weight: bold;
+}
+.announcement {
+	grid-area: "announcement";
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: repeat(2, 1fr);
+	row-gap: 2em;
+	align-items: center;
+	border-top: 1px solid #393939;
+	margin: 0.5em 2em;
+	padding: 2em 0;
+}
+.announcement-img {
+	margin: 0;
+}
+.announcement-content {
+	font-size: 0.9em;
+}
+.announcement-content-title,
+.announcement-content-subtitle {
+	margin: 0;
+}
+.announcement-content-title {
+	font-weight: bold;
+}
+.announcement-content-subtitle {
+	color: rgba(250, 250, 250, 0.5);
+}
+.social {
+	grid-area: "social";
+	margin: 0.5em 2em;
+	border-top: 1px solid #393939;
+	padding: 1em 0;
+}
+.social-list {
+	/* background-color: red; */
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	justify-content: center;
+	padding: 1em 0;
+}
+.social-list figure {
+	margin: 0;
+	text-align: center;
+}
+.terms {
+	grid-area: "terms";
+	border-top: 1px solid #393939;
+	margin: 0.5em 2em;
+}
+.terms-list {
+	list-style: none;
+	font-size: 0.8em;
+	color: rgba(250, 250, 250, 0.5);
+	text-align: center;
+	padding: 2em 0;
+}
+/* footer end */
 /* break points */
 @media screen and (min-width: 839px) {
 	.header-one {
